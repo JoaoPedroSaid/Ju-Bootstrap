@@ -1,71 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js"></script>
     <title>Ju cosméticos</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="bootstrap.css">
-</head>
-<body>
- 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="logo.png" class="logoimg" width="100"alt="">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Destaques</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Preços</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Desativado</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
 
+  <body>
+    <p id="ajuda">Precisa de ajuda? Fale com uma de nossas atendentes.</p>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
+      <a href="index.html" class="navbar-brand" >
+        <img src="logo.png" class="logoimg" width="100" alt="" />
+      </a>
+      
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Alterna navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Sobre nós <span class="sr-only">(Página atual)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Se torne um revendedor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="capa.jpg" alt="slide de capa" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="comissao.png" alt="Segundo Slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="valores.png" alt="Terceiro Slide" />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
 
+    <h2 class="mv">
+      Mais Vendidos <span class="badge badge-secondary">Em promoção</span>
+    </h2>
 
+    <div class="card-deck">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="produto.png"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h5 class="card-title">DermoPés</h5>
+          <p class="card-text">R$28,89</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Veja mais no nosso catálogo</small>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="produto1.png"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Rosativ corporal</h5>
+          <p class="card-text">R$22,49</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Veja mais no nosso catálogo</small>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="produto2.png"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Intensive hair</h5>
+          <p class="card-text">R$28,89</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Veja mais no nosso catálogo</small>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="produto3.png"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h5 class="card-title">kit Rosativ facial</h5>
+          <p class="card-text">R$51,99</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Veja mais no nosso catálogo</small>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="produto4.png"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Clear pele</h5>
+          <p class="card-text">R$41,49</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Veja mais no nosso catálogo</small>
+        </div>
+      </div>
+    </div>
 
+    <h2 class="mv">Nos siga nas redes sociais!</h2>
 
+    <div id="insta">
+      <a class="insta" href="https://www.instagram.com/oficialabelharainha/"
+        >@oficialabelharainha</a
+      >
+      <a class="insta" href="https://www.instagram.com/jubarretofit/"
+        >@jubarretofit</a
+      >
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+    <footer id="rodape">
+      © [2023] Ju cosméticos. Todos os direitos reservados.
+    </footer>
+  </body>
 </html>
